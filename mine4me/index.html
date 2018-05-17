@@ -22,11 +22,33 @@
 			<div id="wrapper">
 				<!-- Main -->
 					<section id="main">
-					<header>
-						<span class="avatar"><img src="../images/miner.png" alt="" /></span>
-						<h1 title="vive le XMR">mine4me</h1>
-					</header>
-						<div class="coinhive-miner" 
+						<header>
+							<span class="avatar"><img src="../images/miner.png" alt="" /></span>
+							<h1 title="vive le XMR">mine4me</h1>
+							<script language="javascript" type="text/javascript">
+								var url = new URL(window.location.href);
+								var user = url.searchParams.get("user");
+								if (user) {
+									document.writeln("<h2>" + user + "</h2>")
+								}
+							</script>
+						</header>
+
+						<div id="user-field" style="display: inline;">
+							<hr />
+							<form method="get" action="">
+								<div class="field">
+									<input type="text" name="user" id="name" placeholder="Nom du mineur" />
+								</div>
+								<ul class="actions">
+									<li><input type="submit" class="button"></li>
+								</ul>
+							</form>
+							<hr />
+						</div>
+						
+						<div id="miner"
+							class="coinhive-miner" 
 							style="width: 384px; height: 310px"
 							data-key="Jc8xjVrFB17kPZTtfN0LFhZovnkzZmey"
 							data-autostart="true"
@@ -39,12 +61,19 @@
 							data-throttle="0">
 							<em>Loading...</em>
 						</div>
+
+						<script language="javascript" type="text/javascript">
+							if (user) {
+								document.getElementById("user-field").style.display = "none";
+								document.getElementById("miner").setAttribute("data-user", user);
+							}
+						</script>
 					</section>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Dabsunter</li>
+							<li><a href="../">&copy; Dabsunter</a></li>
 							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							<!-- Désolé, mais c'est pas beau avec ce dernier copyright ^^'
 							<li>Background: <a href="http://wallpapersafari.com/w/XrA8CT">WALLPAPER SAFARI</a></li>-->
