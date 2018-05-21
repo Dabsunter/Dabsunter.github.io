@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stats Mine4Me • Dabsunter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../../assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../../assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<script src="../../assets/js/iframeResizer.min.js" async></script>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="../../images/miner.png" alt="" /></span>
+							<h1 title="vive le XMR">mine4me</h1>
+							<h2>Statistiques</h2>
+						</header>
+
+						<iframe id="stats" src="http://mine4me.byethost12.com/stats.php" width="550" frameborder="0" scrolling="no"></iframe>
+						<script>iFrameResize({log:true}, '#stats')</script>
+
+						<footer>
+								<ul class="icons">
+									<li><a href="../" class="fa-trophy">Go faire TOP1</a></li>
+								</ul>
+							</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li><a href="../../">&copy; Dabsunter</a></li>
+							<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							<!-- Désolé, mais c'est pas beau avec ce dernier copyright ^^'
+							<li>Background: <a href="http://wallpapersafari.com/w/XrA8CT">WALLPAPER SAFARI</a></li>-->
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="../../assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
